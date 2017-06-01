@@ -6,38 +6,33 @@ http://qiita.com/gash717/items/3ab2e79d3f387f03a998
 ## Git準備
 http://qiita.com/furusin_oriver/items/974a7b7fb8c56ad88d6e
 
-## プロジェクト準備
-適当なフォルダをワークスペースとして作成
-例）デスクトップに、rubyworkspaceフォルダを作成
+## プロジェクト準備  
+#### 適当なフォルダをワークスペースとして作成  
+例）デスクトップに、rubyworkspaceフォルダを作成  
 
-コンソールを開いて、ワークスペースに移動
-例）
-cd desktop
-cd rubyworkspace
+#### コンソールを開いて、ワークスペースに移動
+例）  
+cd desktop  
+cd rubyworkspace  
 
-プロジェクトをクローン	
-git clone https://github.com/misomber/hsgenerator.git
+#### プロジェクトをクローン    
+git clone   https://github.com/misomber/hsgenerator.git  
 
-## ブランチ作成
-下記の【適応な名前】は機能名を入れる。
-ログイン機能を作るなら、　feature/login　など
-開発ブランチから、機能開発ブランチができる。	
+#### ブランチ作成  
+下記の【適応な名前】は機能名を入れる。  
+ログイン機能を作るなら、　feature/login　など  
+開発ブランチから、フィーチャーブランチができる  	
+git checkout -b feature/適当な名前 develop  
 
-git checkout -b feature/適当な名前 develop
+#### プッシュ対象のファイルを確認  
+git status  
 
-# じゃんじゃん開発しよう!!
+#### 対象ファイルをステージングにあげる  
+git add .  
 
-## コミット／プッシュ
-プッシュ対象のファイルを確認
-git status
+#### コミット  
+git commit -m "コメント書いてね（例：ログイン画面まで作成）"  
 
-対象ファイルをステージングにあげる
-git add .
-
-コミット
-git commit -m "コメント書いてね（例：ログイン画面まで作成）"
-
-開発ブランチをプル
-git pull origin develop
-
-git push origin feature/適当な名前　←　自分の開発しているブランチ
+#### プッシュ  
+git pull origin develop  
+git push origin feature/適当な名前　←　自分の開発しているブランチ  
