@@ -21,7 +21,7 @@ git clone   https://github.com/misomber/hsgenerator.git
 #### ブランチ作成  
 下記の【適応な名前】は機能名を入れる。  
 ログイン機能を作るなら、　feature/login　など  
-開発ブランチから、フィーチャーブランチができる。  	
+開発ブランチから、フィーチャーブランチができる  	
 git checkout -b feature/適当な名前 develop  
 
 #### プッシュ対象のファイルを確認  
