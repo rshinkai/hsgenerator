@@ -1,5 +1,8 @@
 # README
 
+## このアプリについて
+ハースストーンのオリジナルカードジェネレーター（日本語版）です。
+
 ## Ruby on Rails 環境構築（Mac）
 http://qiita.com/gash717/items/3ab2e79d3f387f03a998
 
