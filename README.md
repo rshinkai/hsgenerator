@@ -7,7 +7,8 @@
 http://qiita.com/gash717/items/3ab2e79d3f387f03a998
 
 ## Git準備
-http://qiita.com/furusin_oriver/items/974a7b7fb8c56ad88d6e
+http://qiita.com/furusin_oriver/items/974a7b7fb8c56ad88d6e  
+http://qiita.com/2m1tsu3/items/6d49374230afab251337  
 
 ## プロジェクト準備  
 #### 適当なフォルダをワークスペースとして作成  
@@ -19,14 +20,37 @@ cd desktop
 cd rubyworkspace  
 
 #### プロジェクトをクローン    
-git clone   https://github.com/misomber/hsgenerator.git  
+git clone https://github.com/misomber/hsgenerator.git  
 
 #### ブランチ作成  
 下記の【適応な名前】は機能名を入れる。  
 ログイン機能を作るなら、　feature/login　など  
 開発ブランチから、フィーチャーブランチができる  	
+  
 git checkout -b feature/適当な名前 develop  
 
+## エディタ準備 Atomを使用（実際なんでもいいけど）
+#### Atomのインストール  
+https://atom.io/  
+
+#### Atomのパッケージのインストール
+http://qiita.com/nishina555/items/d3690b057f4624d39d77
+
+#### プロジェクトフォルダの設定
+Atomを開く  
+「ファイル」の「プロジェクトフォルダの追加」から、rubyworkspaceを選択  
+
+## ソース編集時の作業
+#### フェッチ
+ワークスペースに移動  
+git fetch　を入力し、リモートブランチを確認  
+作業が重複しないことを確認  
+
+#### ブランチの確認
+git branch  
+自分のブランチに * がついていればおｋ  
+
+## ソース編集後の作業
 #### プッシュ対象のファイルを確認  
 git status  
 
