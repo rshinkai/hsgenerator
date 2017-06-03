@@ -50,11 +50,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :development, :test do
-  gem 'sqlite3', '1.3.11'
-  gem 'byebug',  '9.0.0', platform: :mri
-end
-
 group :development do
   gem 'web-console',           '3.1.1'
   gem 'listen',                '3.0.8'
