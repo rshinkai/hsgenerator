@@ -1,0 +1,6 @@
+<h1><%= @title %></h1>
+<p><%= @msg %></p>
+<form method="POST" action="/hello/index">
+  <input type="text" name="input1" value="<%= @value %>"/>
+  <input type="submit"/>
+</form>
