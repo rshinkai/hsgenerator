@@ -63,3 +63,13 @@ git commit -m "コメント書いてね（例：ログイン画面まで作成�
 #### プッシュ  
 git pull origin develop  
 git push origin feature/適当な名前　←　自分の開発しているブランチ  
+
+## アプリ構築
+### 最初のライブラリとかのインストール
+'gem install bundler'
+'bundle install --without production'
+エラーが起きたら一個ずつ頑張って解消する
+macOS環境だとnokogiriのインストールで失敗するかもしれない。
+
+## ライブラリとかの更新
+'budnle update'
