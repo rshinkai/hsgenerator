@@ -1,4 +1,5 @@
 class CreateController < ApplicationController
+  # 初期画面表示用のメソッド
   def index
   end
 
@@ -20,5 +21,9 @@ class CreateController < ApplicationController
   end
 =end
 # ここまで
+
+  # カード作成ボタン押下後の処理
+  def createCard    
+  end
 
 end
