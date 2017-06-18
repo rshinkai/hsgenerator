@@ -24,3 +24,41 @@
 <img src="/Hearthstone_Logo.png" width="540px" height="360px" class="logo"/>
 </a>
 </div>
+
+<%= form_for @card, :url => {:action => 'createCard'} do |f| %>
+  <div>
+    <label>カード名　：　</label>
+    <%= f.text_field :card_name, maxlength:15, size:"30x12" %></br>
+  </div>
+  <div>
+    <label>種族　：　</label>
+    <%= f.text_field :race, maxlength:10, size:"30x12" %></br>
+  </div>
+  <div>
+    <label>クラス　：　</label>
+    <%= f.select :rarity_cd, [["クラスマスタから取得したい", "rails_base"]] %>
+  </div>
+  <div>
+    <label>コスト：</label>
+    <%= f.text_field :cost, maxlength:2 %>
+    <label>アタック：</label>
+    <%= f.text_field :attack, maxlength:2 %>
+    <label>ヘルス：</label>
+    <%= f.text_field :health, maxlength:2 %>
+  </div>
+  <div>
+    <label>レアリティ　：　</label>
+    <%= f.select :rarity_cd, [["レアリティマスタから取得したい", "rails_base"]] %>
+  </div>
+  <div>
+    <label>能力　：　</label>
+    <%= f.text_area :ability %></br>
+  </div>
+  <div>
+    <label>カード画像　：　</label>
+    <%= f.file_field :file_id %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

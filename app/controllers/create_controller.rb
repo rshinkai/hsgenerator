@@ -1,6 +1,8 @@
 class CreateController < ApplicationController
   # 初期画面表示用のメソッド
   def index
+    # フォームの値を詰める用のオブジェクト
+    @card = Card.new
   end
 
 # ここから、フォームのサンプル（一応コメントアウトして残す）
@@ -23,7 +25,7 @@ class CreateController < ApplicationController
 # ここまで
 
   # カード作成ボタン押下後の処理
-  def createCard    
+  def createCard
   end
 
 end
