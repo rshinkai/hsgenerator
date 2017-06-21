@@ -1,0 +1,54 @@
+nav.navbar.navbar-default
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"]
+        span.sr-only
+          | Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand[href="/"]
+        | ハースストーンオリジナルカードジェネレーター
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right
+
+.logoCenter
+  a[href="/"]
+    img.logo[src="/Hearthstone_Logo.png" width="540px" height="360px"]
+= form_for @card, :url => {:action => 'createCard'} do |f|
+  div
+    label
+      | カード名　：　
+    = f.text_field :card_name, maxlength:15, size:"30x12"
+  div
+    label
+      | 種族　：　
+    = f.text_field :race, maxlength:10, size:"30x12"
+  div
+    label
+      | クラス　：　
+    = f.select :rarity_cd, [["クラスマスタから取得したい", "rails_base"]]
+  div
+    label
+      | コスト：
+    = f.text_field :cost, maxlength:2
+    label
+      | アタック：
+    = f.text_field :attack, maxlength:2
+    label
+      | ヘルス：
+    = f.text_field :health, maxlength:2
+  div
+    label
+      | レアリティ　：　
+    = f.select :rarity_cd, [["レアリティマスタから取得したい", "rails_base"]]
+  div
+    label
+      | 能力　：　
+    = f.text_area :ability
+  div
+    label
+      | カード画像　：　
+    = f.file_field :file_id
+  div
+    = f.submit
