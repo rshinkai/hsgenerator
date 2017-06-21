@@ -1,0 +1,2 @@
+class ImageFile < ApplicationRecord
+end
