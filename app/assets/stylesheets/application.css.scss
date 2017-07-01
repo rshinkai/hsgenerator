@@ -6,14 +6,23 @@
  }
 
  body{
-    background-color: #dfbd91;
+    background-image: image-url("/Journey_to_Un_Goro_Key_Art.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+ .panel{
+   background-color: transparent;
  }
 
  .left-body {
    float: left;
    width: 50%;
+   background-color: #ffffff
  }
  .right-body {
    float: right;
    width: 50%;
+   background-color: none;
  }
