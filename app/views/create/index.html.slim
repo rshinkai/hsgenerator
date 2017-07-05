@@ -27,7 +27,7 @@ nav.navbar.navbar-default
   div
     label
       | クラス　：　
-    = f.select :rarity_cd, [["クラスマスタから取得したい", "rails_base"]]
+      = collection_select(:id, 0, CardClass.all, :id, :name)
   div
     label
       | コスト：
@@ -41,7 +41,7 @@ nav.navbar.navbar-default
   div
     label
       | レアリティ　：　
-    = f.select :rarity_cd, [["レアリティマスタから取得したい", "rails_base"]]
+      = collection_select(:id, 0, Rarity.all, :id, :name)
   div
     label
       | 能力　：　
