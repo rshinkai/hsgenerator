@@ -21,7 +21,7 @@ CardClass.create(:name => 'paladin', :created_at => '2017-07-04', :updated_at =>
 =end
 
 =begin
-# rariry
+# Rarity
 Rarity.create(:name => 'common', :created_at => '2017-07-04', :updated_at => '2017-07-04')
 Rarity.create(:name => 'rare', :created_at => '2017-07-04', :updated_at => '2017-07-04')
 Rarity.create(:name => 'epic', :created_at => '2017-07-04', :updated_at => '2017-07-04')
