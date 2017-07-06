@@ -15,40 +15,45 @@ nav.navbar.navbar-default
 .logoCenter
   a[href="/"]
     img.logo[src="/Hearthstone_Logo.png" width="540px" height="360px"]
-= form_for @card, :url => {:action => 'createCard'} do |f|
-  div
-    label
-      | カード名　：　
-    = f.text_field :card_name, maxlength:15, size:"30x12"
-  div
-    label
-      | 種族　：　
-    = f.text_field :race, maxlength:10, size:"30x12"
-  div
-    label
-      | クラス　：　
-      = collection_select(:id, 0, CardClass.all, :id, :name)
-  div
-    label
-      | コスト：
-    = f.text_field :cost, maxlength:2
-    label
-      | アタック：
-    = f.text_field :attack, maxlength:2
-    label
-      | ヘルス：
-    = f.text_field :health, maxlength:2
-  div
-    label
-      | レアリティ　：　
-      = collection_select(:id, 0, Rarity.all, :id, :name)
-  div
-    label
-      | 能力　：　
-    = f.text_area :ability
-  div
-    label
-      | カード画像　：　
-    = f.file_field :file_id
-  div
-    = f.submit
+
+div.form_bg.panel.left-body
+  div.left-body-content
+    = form_for @card, :url => {:action => 'createCard'} do |f|
+      div
+        label
+          | カード名　：　
+        = f.text_field :card_name, maxlength:15, size:"30x12"
+      div
+        label
+          | 種族　：　
+        = f.text_field :race, maxlength:10, size:"30x12"
+      div
+        label
+          | クラス　：　
+          = collection_select(:id, 0, CardClass.all, :id, :name)
+      div
+        label
+          | コスト：
+        = f.text_field :cost, maxlength:2
+        label
+          | アタック：
+        = f.text_field :attack, maxlength:2
+        label
+          | ヘルス：
+        = f.text_field :health, maxlength:2
+      div
+        label
+          | レアリティ　：　
+          = collection_select(:id, 0, Rarity.all, :id, :name)
+      div
+        label
+          | 能力　：　
+        = f.text_area :ability
+      div
+        label
+          | カード画像　：　
+        = f.file_field :file_id
+      div
+        = f.submit
+
+div.panel.right-body
