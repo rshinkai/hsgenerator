@@ -6,6 +6,9 @@
 ## Ruby on Rails 環境構築（Mac）
 http://qiita.com/gash717/items/3ab2e79d3f387f03a998
 
+## Ruby on Rails 環境構築 (Windows)
+http://www.bitcrew.co.jp/tips/post-284
+
 ## Git準備
 http://qiita.com/furusin_oriver/items/974a7b7fb8c56ad88d6e  
 http://qiita.com/2m1tsu3/items/6d49374230afab251337  
@@ -26,7 +29,7 @@ git clone https://github.com/misomber/hsgenerator.git
 下記の【適応な名前】は機能名を入れる。  
 ログイン機能を作るなら、　feature/login　など  
 開発ブランチから、フィーチャーブランチができる  	
-  
+
 git checkout -b feature/適当な名前 develop  
 
 ## エディタ準備 Atomを使用（実際なんでもいいけど）
