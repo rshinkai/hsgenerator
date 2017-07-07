@@ -6,5 +6,33 @@
  }
 
  body{
-    background-color: #dfbd91;
+    background-image: image-url("/hs_frozen.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
+.form_bg{
+  background-image: image-url("/hs_form_bg_arrange.png");
+  background-size: contain;
+}
+
+ .panel{
+   background-color: transparent;
+ }
+
+ .left-body {
+   float: left;
+   width: 50%;
+   height: 1000px;
+ }
+
+.left-body-content{
+  margin: 100px 100px;
+}
+
+ .right-body {
+   float: right;
+   width: 50%;
+   background-color: none;
  }
