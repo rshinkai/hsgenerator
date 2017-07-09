@@ -14,7 +14,7 @@ nav.navbar.navbar-default
 
 .logoCenter
   a[href="/"]
-    img.logo[src="/Hearthstone_Logo.png" width="540px" height="360px"]
+    img.logo[src="/Hearthstone-Logo.png"]
 
 div.form_bg.panel.left-body
   div.left-body-content
@@ -30,7 +30,7 @@ div.form_bg.panel.left-body
       div
         label
           | クラス　：　
-          = collection_select(:id, 0, CardClass.all, :id, :name)
+          = collection_select(:class_id, 0, CardClass.all, :id, :name)
       div
         label
           | コスト：
@@ -44,7 +44,7 @@ div.form_bg.panel.left-body
       div
         label
           | レアリティ　：　
-          = collection_select(:id, 0, Rarity.all, :id, :name)
+          = collection_select(:rarity_id, 0, Rarity.all, :id, :name)
       div
         label
           | 能力　：　
@@ -57,3 +57,4 @@ div.form_bg.panel.left-body
         = f.submit
 
 div.panel.right-body
+  img[src="/card-templates/card_minion_normal.png", class="card_template"]
