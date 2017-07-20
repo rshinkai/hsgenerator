@@ -31,19 +31,10 @@ function drawCard(templateName, gemName){
 }
 
 $(function(){
-  $('#class_id_0').change(function(){
+  $('select[name="selection[0]"]').change(function(){
     // 選択されている表示文字列を取り出す
-    var templateName = $('#class_id_0 option:selected').text();
-    var gemName = $('#rarity_id_0 option:selected').text();
-    drawCard(templateName,gemName);
-  });
-});
-
-$(function(){
-  $('#rarity_id_0').change(function(){
-    // 選択されている表示文字列を取り出す
-    var templateName = $('#class_id_0 option:selected').text();
-    var gemName = $('#rarity_id_0 option:selected').text();
+    var templateName = $('.cardclass option:selected').text();
+    var gemName = $('.rarity option:selected').text();
     drawCard(templateName,gemName);
   });
 });
