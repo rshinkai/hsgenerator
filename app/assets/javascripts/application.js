@@ -17,3 +17,4 @@
 //= require turbolinks
 //= require_tree .
 //= require card_tmplt_select
+//= require canvas_draw
