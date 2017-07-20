@@ -18,3 +18,4 @@
 //= require_tree .
 //= require card_tmplt_select
 //= require canvas_draw
+//= require gem_select
