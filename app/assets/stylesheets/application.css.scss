@@ -1,39 +1,40 @@
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- .logoCenter {
-   text-align: center;
- }
+.logoCenter {
+  text-align: center;
+}
 
- body{
-    background-image: image-url("/hs_frozen.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
- }
-.form_bg{
+body {
+  background-image: image-url("/hs_frozen.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.form_bg {
   background-image: image-url("/hs_form_bg_arrange.png");
   background-size: contain;
 }
 
- .panel{
-   background-color: transparent;
- }
+.panel {
+  background-color: transparent;
+}
 
- .left-body {
-   float: left;
-   width: 50%;
-   height: 1000px;
- }
+.left-body {
+  float: left;
+  width: 50%;
+  height: 1000px;
+}
 
 .left-body-content{
   margin: 100px 100px;
 }
 
- .right-body {
-   float: right;
-   width: 50%;
-   background-color: none;
- }
+.right-body {
+  float: right;
+  width: 50%;
+  background-color: none;
+}
