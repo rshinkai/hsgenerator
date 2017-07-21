@@ -30,7 +30,7 @@ div.form_bg.panel.left-body
       div
         label
           | クラス　：　
-          = collection_select(:class_id, 0, CardClass.all, :id, :name)
+          = collection_select(:selection, 0, CardClass.all, :id, :name,{prompt: false}, {class:"cardclass"})
       div
         label
           | コスト：
@@ -44,7 +44,7 @@ div.form_bg.panel.left-body
       div
         label
           | レアリティ　：　
-          = collection_select(:rarity_id, 0, Rarity.all, :id, :name)
+          = collection_select(:selection, 0, Rarity.all, :id, :name,{prompt: false}, {class:"rarity"})
       div
         label
           | 能力　：　
@@ -57,4 +57,4 @@ div.form_bg.panel.left-body
         = f.submit
 
 div.panel.right-body
-  img[src="/card-templates/card_minion_normal.png", class="card_template"]
+  canvas#card height="550" width="400"
