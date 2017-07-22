@@ -16,7 +16,7 @@ nav.navbar.navbar-default
   a[href="/"]
     img.logo[src="/Hearthstone-Logo.png"]
 
-div.form_bg.panel.left-body
+div.form_bg.left-body
   div.left-body-content
     = form_for @card, :url => {:action => 'createCard'} do |f|
       div
@@ -56,5 +56,5 @@ div.form_bg.panel.left-body
       div
         = f.submit
 
-div.panel.right-body
+div.right-body
   canvas#card height="550" width="400"
