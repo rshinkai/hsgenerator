@@ -58,7 +58,7 @@ function drawCard(){
   var imgCnt = 0;
   // イメージオブジェクト
   var Img = new Array();
-  // カード枠とジェム画像が読み込まれたら、canvax描画
+  // カード枠とジェム画像が読み込まれたら、canvas描画
   for(i = 0; i < imgArray.length; i++){
     var img = new Image();
     img.src = imgArray[i];
