@@ -21,37 +21,37 @@ div.form_bg.panel.left-body
     = form_for @card, :url => {:action => 'createCard'} do |f|
       div
         label
-          | カード名　：　
+          = t("form.label.card_name")
         = f.text_field :card_name, maxlength:15, size:"30x12"
       div
         label
-          | 種族　：　
+          = t("form.label.race_name")
         = f.text_field :race, maxlength:10, size:"30x12"
       div
         label
-          | クラス　：　
+          = t("form.label.class_name")
           = collection_select(:selection, 0, CardClass.all, :id, :name,{prompt: false}, {class:"cardclass"})
       div
         label
-          | コスト：
+          = t("form.label.cost")
         = f.text_field :cost, maxlength:2
         label
-          | アタック：
+          = t("form.label.attack")
         = f.text_field :attack, maxlength:2
         label
-          | ヘルス：
+          = t("form.label.health")
         = f.text_field :health, maxlength:2
       div
         label
-          | レアリティ　：　
+          = t("form.label.rarity")
           = collection_select(:selection, 0, Rarity.all, :id, :name,{prompt: false}, {class:"rarity"})
       div
         label
-          | 能力　：　
+          = t("form.label.ability")
         = f.text_area :ability
       div
         label
-          | カード画像　：　
+          = t("form.label.card_image")
         = f.file_field :file_id
       div
         = f.submit
