@@ -39,8 +39,13 @@ body {
   margin: 10px;
 }
 
-.input_field {
+.form_line {
   width: 100%;
+  min-height: 30px;
+}
+
+.input_label {
+  width: 25%;
 }
 
 .bt_create {
