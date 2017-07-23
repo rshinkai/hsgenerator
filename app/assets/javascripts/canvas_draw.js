@@ -31,7 +31,7 @@ function drawCard(templateName, gemName){
 }
 
 $(function(){
-  $('select[name="selection[0]"]').change(function(){
+  $('.cardclass, .rarity').change(function(){
     // 選択されている表示文字列を取り出す
     var templateName = $('.cardclass option:selected').text();
     var gemName = $('.rarity option:selected').text();
