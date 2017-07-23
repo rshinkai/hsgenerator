@@ -21,7 +21,7 @@ $(function(){
 
 // テキストエリアを入力した場合の処理
 $(function(){
-  $('.inputarea').change(function(){
+  $('.inputarea').keyup(function(){
     drawCard();
   });
 });
@@ -45,13 +45,8 @@ function drawCard(){
   gem.src = gemsrc + gemName + extention;
   imgArray.push(gem.src);
 
-  // cost
   var cost = $("#card_cost").val();
-
-  // attack
   var attack = $("#card_attack").val();
-
-  // health
   var health = $("#card_health").val();
 
   // 読み込んだ画像数カウント
@@ -70,10 +65,23 @@ function drawCard(){
         ctx.drawImage(gem, 195, 310, 30, 35);
         ctx.font='normal bold 60px sans-serif';
         ctx.fillStyle = '#fff';
-        ctx.fillText(cost, 45,80);
+        if(cost.length > 1){
+          ctx.fillText(cost, 25,80);
+        }else{
+          ctx.fillText(cost, 45,80);
+        }
+
         ctx.font='normal bold 48px sans-serif';
-        ctx.fillText(attack, 50,505);
-        ctx.fillText(health, 335,510);
+        if(attack.length > 1){
+          ctx.fillText(attack, 35,505);
+        }else{
+          ctx.fillText(attack, 50,505);
+        }
+        if(health.length > 1){
+          ctx.fillText(health, 320,510);
+        }else{
+          ctx.fillText(health, 335,510);
+        }
       }
     }
   }
