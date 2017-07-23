@@ -1,43 +1,42 @@
 div.form_bg.left-body
-  div.left-body-content
-    = form_for @card, :url => {:action => 'createCard'} do |f|
-      div
-        label
-          = t("form.label.card_name")
-          = f.text_field :card_name, maxlength:15, size:"30x12"
-      div
-        label
-          = t("form.label.race_name")
-          = f.text_field :race, maxlength:10, size:"30x12"
-      div
-        label
-          = t("form.label.class_name")
-          = collection_select(:selection, 0, CardClass.all, :id, :name,{prompt: false}, {class:"cardclass"})
-      div
-        label
-          = t("form.label.cost")
-          = f.text_field :cost, maxlength:2
-        label
-          = t("form.label.attack")
-          = f.text_field :attack, maxlength:2
-        label
-          = t("form.label.health")
-          = f.text_field :health, maxlength:2
-      div
-        label
-          = t("form.label.rarity")
-          = collection_select(:selection, 0, Rarity.all, :id, :name,{prompt: false}, {class:"rarity"})
-      div
-        label
-          = t("form.label.ability")
-          = f.text_area :ability
-      div
-        label
-          = t("form.label.card_image")
-          = f.file_field :file_id
-      div
-        label
-          = image_submit_tag "/button/card_create_button.png"
+  = form_for @card, :url => {:action => 'createCard'} do |f|
+    div
+      label
+        = t("form.label.card_name")
+        = f.text_field :card_name, maxlength:15, size:"30x12"
+    div
+      label
+        = t("form.label.race_name")
+        = f.text_field :race, maxlength:10, size:"30x12"
+    div
+      label
+        = t("form.label.class_name")
+        = collection_select(:selection, 0, CardClass.all, :id, :name,{prompt: false}, {class:"cardclass"})
+    div
+      label
+        = t("form.label.cost")
+        = f.text_field :cost, maxlength:2
+      label
+        = t("form.label.attack")
+        = f.text_field :attack, maxlength:2
+      label
+        = t("form.label.health")
+        = f.text_field :health, maxlength:2
+    div
+      label
+        = t("form.label.rarity")
+        = collection_select(:selection, 0, Rarity.all, :id, :name,{prompt: false}, {class:"rarity"})
+    div
+      label
+        = t("form.label.ability")
+        = f.text_area :ability
+    div
+      label
+        = t("form.label.card_image")
+        = f.file_field :file_id
+    div
+      label
+        = image_submit_tag "/button/card_create_button.png"
 
 div.right-body
   canvas#card height="550" width="400"
