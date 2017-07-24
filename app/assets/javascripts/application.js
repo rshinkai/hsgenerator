@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require rails-ujs
-//= require turbolinks
 //= require image-picker.min
 //= require_tree .
 //= require canvas_draw

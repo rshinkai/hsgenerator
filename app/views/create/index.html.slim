@@ -11,13 +11,13 @@
       = collection_select(:card_class, :name, CardClass.all, :id, :name,{prompt: false}, {class:"cardclass"})
     .form_line
       = f.label :cost, t("form.label.cost"), class: "input_label"
-      = f.text_field :cost, maxlength:2
+      = f.text_field :cost, maxlength:2, class:'inputarea'
     .form_line
       = f.label :attack, t("form.label.attack"), class: "input_label"
-      = f.text_field :attack, maxlength:2
+      = f.text_field :attack, maxlength:2, class:'inputarea'
     .form_line
       = f.label :health, t("form.label.health"), class: "input_label"
-      = f.text_field :health, maxlength:2
+      = f.text_field :health, maxlength:2, class:'inputarea'
     .form_line
       = label :rarity, :name, t("form.label.rarity"), class: "input_label"
       = collection_select(:rarity, :name, Rarity.all, :id, :name,{prompt: false}, {class:"rarity"})
