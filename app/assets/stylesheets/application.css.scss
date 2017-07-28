@@ -1,39 +1,60 @@
- @import "bootstrap-sprockets";
- @import "bootstrap";
+@import "image-picker";
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
- .logoCenter {
-   text-align: center;
- }
+body {
+  background-image: image-url("/hs_frozen.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  min-width: 1024px;
+}
 
- body{
-    background-image: image-url("/hs_frozen.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
- }
-.form_bg{
+.logoCenter {
+  text-align: center;
+}
+
+.content {
+  width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form_bg {
   background-image: image-url("/hs_form_bg_arrange.png");
   background-size: contain;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-repeat: no-repeat;
 }
 
- .panel{
-   background-color: transparent;
- }
-
- .left-body {
-   float: left;
-   width: 50%;
-   height: 1000px;
- }
-
-.left-body-content{
-  margin: 100px 100px;
+.left-body {
+  float: left;
+  width: 550px;
+  height: 650px;
+  padding: 80px 60px;
+  margin: 10px;
 }
 
- .right-body {
-   float: right;
-   width: 50%;
-   background-color: none;
- }
+.form_line {
+  width: 100%;
+  min-height: 30px;
+}
+
+.input_label {
+  width: 25%;
+}
+
+.bt_create {
+  width: 250px;
+}
+
+.right-body {
+  float: right;
+  width: 400px;
+  margin: 10px;
+  background-color: none;
+}

@@ -14,7 +14,7 @@ $(document).ready(function() {
 
 // クラス、レア度を選択した場合の処理
 $(function(){
-  $('select[name="selection[0]"]').change(function(){
+  $('.cardclass, .rarity').change(function(){
     drawCard();
   });
 });

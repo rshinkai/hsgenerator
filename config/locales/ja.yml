@@ -1,0 +1,12 @@
+ja:
+  form:
+    label:
+      card_name: カード名
+      race_name: 種族
+      class_name: クラス
+      cost: コスト
+      attack: アタック
+      health: ヘルス
+      rarity: レアリティ
+      ability: 能力
+      card_image: カード画像
