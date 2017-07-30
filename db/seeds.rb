@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # CardClass用マスタデータ
-CardClass.create(:name => 'normal', :created_at => '2017-07-04', :updated_at => '2017-07-04')
+CardClass.create(:name => 'neutral', :created_at => '2017-07-04', :updated_at => '2017-07-04')
 CardClass.create(:name => 'mage', :created_at => '2017-07-04', :updated_at => '2017-07-04')
 CardClass.create(:name => 'shaman', :created_at => '2017-07-04', :updated_at => '2017-07-04')
 CardClass.create(:name => 'priest', :created_at => '2017-07-04', :updated_at => '2017-07-04')
