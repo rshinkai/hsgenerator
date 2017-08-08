@@ -17,3 +17,4 @@
 //= require image-picker.min
 //= require_tree .
 //= require canvas_draw
+//= require show_progress_bar

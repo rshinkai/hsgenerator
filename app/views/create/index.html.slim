@@ -29,7 +29,10 @@
       = f.file_field :file_id, class: "pull-left"
     .form_line.text-center
       label
-        = image_submit_tag("/button/card_create_button.png", class: "bt_create")
+        = image_submit_tag("/button/card_create_button.png", class: "bt_create", onclick: "move()")
 
 .right-body
   canvas#card height="550" width="400"
+
+#myProgress
+  #myBar
