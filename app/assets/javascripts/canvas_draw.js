@@ -30,7 +30,7 @@ function drawCard(){
   var canvas = document.getElementById('card');
   var ctx = canvas.getContext('2d');
 
-  var templateName = $('.cardclass option:selected').text();
+  var templateName = $('.cardclass option:selected').val();
   var gemName = $('.rarity option:selected').text();
 
   var imgArray = new Array();

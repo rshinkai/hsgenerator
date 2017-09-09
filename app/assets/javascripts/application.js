@@ -17,3 +17,10 @@
 //= require image-picker.min
 //= require_tree .
 //= require canvas_draw
+
+$(function(){
+  $("select#card_card_class").imagepicker({
+    hide_select : true,
+    show_label  : false
+  })
+})
