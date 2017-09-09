@@ -1,4 +1,20 @@
 ja:
+  card_class:
+    normal: 中立
+    mage: メイジ
+    shaman: シャーマン
+    priest: プリースト
+    warlock: ウォーロック
+    warrior: ウォリアー
+    rogue: ローグ
+    hunter: ハンター
+    druid: ドルイド
+    paladin: パラディン
+  rarity:
+    common: コモン
+    rare: レア
+    epic: エピック
+    legeng: レジェンド
   form:
     label:
       card_name: カード名

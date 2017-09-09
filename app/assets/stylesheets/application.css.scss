@@ -35,17 +35,24 @@ body {
   float: left;
   width: 550px;
   height: 650px;
-  padding: 80px 60px;
+  padding: 80px 50px;
   margin: 10px;
 }
 
 .form_line {
   width: 100%;
   min-height: 30px;
+  margin: 3px 0;
+  padding: 0;
+  display: block;
 }
 
 .input_label {
   width: 25%;
+}
+
+.input_field {
+  width: 60%;
 }
 
 .bt_create {
