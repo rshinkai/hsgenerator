@@ -26,7 +26,8 @@ ul.thumbnails.image_picker_selector {
       border: 1px solid #dddddd;
       -webkit-user-select: none;
       -moz-user-select: none;
-      -ms-user-select: none; }
+      -ms-user-select: none;
+      margin: 0px;}
       ul.thumbnails.image_picker_selector li .thumbnail img {
         -webkit-user-drag: none; }
     ul.thumbnails.image_picker_selector li .thumbnail.selected {
