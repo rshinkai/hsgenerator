@@ -63,7 +63,7 @@ body {
 #modal-main {
  display: none;
  width: 500px;
- height: 150px;
+ height: 30px;
  margin: 0;
  padding: 0;
  background-color: #ffffff;
@@ -85,10 +85,14 @@ body {
 
 #myProgress {
     width: 100%;
-    background-color: grey;
+    background-color: #ffffff;
 }
 #myBar {
     width: 1%;
     height: 30px;
-    background-color: green;
+    background-color: #80FCFF;
+}
+#loading-msg{
+  color: black;
+  text-align: center;
 }
